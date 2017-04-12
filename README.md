@@ -16,8 +16,8 @@ If the docker is running over a docker-machine virtual machine you can get the I
 
 The route for send mail is **/send-mail** and this requires the next params.
 
-*name:required Name of contact
-*email:required An email valid from contact
-*body:required Body email
+* name:required Name of contact
+* email:required An email valid from contact
+* body:required Body email
 
 **The SMTP params can be set on config/environments/development.rb**
