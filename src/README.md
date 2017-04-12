@@ -1,24 +1,23 @@
-# README
+# SMTP Rails
+## Requirements
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### For running
+* Docker
+* Docker Compose
 
-Things you may want to cover:
+## Up and Running
 
-* Ruby version
+* First we need run over root `docker-compose up` this command ups the docker containers and configurations.
+* For run in background we need type `docker-compose start -d`
 
-* System dependencies
+The project is available in `localhost:3000`
 
-* Configuration
+If the docker is running over a docker-machine virtual machine you can get the IP:
 
-* Database creation
+The route for send mail is /send-mail and this requires the next params.
 
-* Database initialization
+name:required Name of contact
+email:required An email valid from contact
+body:required Body email
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The SMTP params can be set on config/environments/development.rb
